@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZEMPC_22AD070_EMP070'
+@MappingRole: true
+define role ZEMPC_22AD070_EMP070 {
+  grant select on ZEMPC_22AD070_EMP070
+  where INHERITING CONDITIONS FROM ENTITY ZEMPR_22AD070_EMP070 REPLACING { ROOT WITH _BaseEntity };
+}

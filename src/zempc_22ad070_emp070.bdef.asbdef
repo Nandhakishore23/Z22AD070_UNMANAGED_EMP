@@ -1,0 +1,20 @@
+projection implementation in class ZEMPBP_C_22AD070_EMP070 unique;
+strict ( 2 );
+extensible;
+use draft;
+use side effects;
+define behavior for ZEMPC_22AD070_EMP070 alias Zempc22ad070Emp070
+extensible
+use etag
+{
+  use create;
+  use update;
+  use delete;
+
+  use action Edit;
+  use action Activate;
+  use action Discard;
+  use action Resume;
+  use action Prepare;
+
+}

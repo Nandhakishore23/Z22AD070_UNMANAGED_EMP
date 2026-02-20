@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service defination For Projection'
+define service ZUN_SRV_DD_070 {
+  expose zun_emp_proj_070 as EMP;
+}

@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZEMPR_22AD070_EMP070'
+@MappingRole: true
+define role ZEMPR_22AD070_EMP070 {
+  grant select on ZEMPR_22AD070_EMP070
+  where TRUE;
+}

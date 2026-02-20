@@ -1,0 +1,9 @@
+projection;
+strict ( 2 );
+
+define behavior for zun_emp_proj_070 alias EMP
+{
+  use create;
+  use update;
+  use delete;
+}

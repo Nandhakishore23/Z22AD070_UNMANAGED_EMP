@@ -1,0 +1,53 @@
+managed implementation in class ZEMPBP_R_22AD070_EMP070 unique;
+strict ( 2 );
+with draft;
+extensible;
+define behavior for ZEMPR_22AD070_EMP070 alias Zempr22ad070Emp070
+persistent table Z22AD070_EMP
+extensible
+draft table ZEMP22D070_D070
+etag master LocalLastChangedAt
+lock master total etag LastChangedAt
+authorization master( global )
+{
+  field ( mandatory : create )
+   EmpID;
+
+  field ( readonly )
+   LocalCreatedBy,
+   LocalCreatedAt,
+   LocalLastChangedBy,
+   LocalLastChangedAt,
+   LastChangedAt;
+
+  field ( readonly : update )
+   EmpID;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for Z22AD070_EMP corresponding extensible
+  {
+    EmpID = emp_id;
+    EmpName = emp_name;
+    Department = department;
+    CukyField = cuky_field;
+    Salary = salary;
+    Doj = doj;
+    Email = email;
+    LocalCreatedBy = local_created_by;
+    LocalCreatedAt = local_created_at;
+    LocalLastChangedBy = local_last_changed_by;
+    LocalLastChangedAt = local_last_changed_at;
+    LastChangedAt = last_changed_at;
+  }
+
+}

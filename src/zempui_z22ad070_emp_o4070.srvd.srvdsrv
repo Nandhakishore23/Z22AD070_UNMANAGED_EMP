@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZEMPC_22AD070_EMP070'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZEMPC_22AD070_EMP070'
+  }
+}
+define service ZEMPUI_Z22AD070_EMP_O4070 provider contracts odata_v4_ui {
+  expose ZEMPC_22AD070_EMP070;
+}

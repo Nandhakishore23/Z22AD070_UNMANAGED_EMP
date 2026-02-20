@@ -1,0 +1,11 @@
+unmanaged implementation in class ZBP_22AD071_EMP unique;
+strict ( 2 );
+define behavior for Z22AD071_I_EMP alias EMP
+late numbering
+lock master
+authorization master ( instance )
+{
+ create;
+ update;
+ delete;
+}

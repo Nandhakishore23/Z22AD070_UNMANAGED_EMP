@@ -1,0 +1,12 @@
+unmanaged implementation in class zbp_un_emp_root_070 unique;
+strict ( 2 );
+define behavior for zun_emp_root_070 alias  EMP
+late numbering
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}
